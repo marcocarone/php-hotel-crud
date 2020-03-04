@@ -13,9 +13,28 @@
 
 <body>
 
+  <header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-xl">
+      <a class="navbar-brand" href="#">Hotel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.php">Stanze<span class="sr-only">(current)</span></a>
+          </li>
+
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <div class="container-xl">
+    <div class="container-xl margin-top">
       <div class="row">
         <div class="col-12">
           <h2>Stanze hotel</h2>
