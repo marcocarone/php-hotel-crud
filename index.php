@@ -24,14 +24,14 @@
       <div class="row">
         <div class="col-sm-12">
 
-          <div class="table-responsive">
+          <div class="table-responsive-xs">
             <table class="table">
               <thead>
                 <tr>
-                  <th>Id Stanza</th>
-                  <th>Numero Stanza</th>
-                  <th>Piano</th>
-                  <th class="text-right">Azioni</th>
+                  <th scope="col">Id Stanza</th>
+                  <th scope="col">Numero Stanza</th>
+                  <th scope="col">Piano</th>
+                  <th scope="col" class="text-right">Azioni</th>
                 </tr>
               </thead>
               <tbody>
