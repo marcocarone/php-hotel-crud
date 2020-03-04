@@ -14,15 +14,15 @@
 
 
   <main>
-    <div class="container">
+    <div class="container-xl">
       <div class="row">
-        <div class="col-sm-6">
-          <h1>Le stanze dell'hotel</h1>
+        <div class="col-6">
+          <h1>Stanze hotel</h1>
         </div>
 
       </div>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12">
 
           <div class="table-responsive-xs">
             <table class="table">
@@ -44,13 +44,13 @@
                   <td><?php echo $room['room_number']; ?></td>
                   <td><?php echo $room['floor']; ?></td>
                   <td class="text-right">
-                    <a class="btn btn-info" href="show/show.php?id=<?php echo $room['id']; ?>">
+                    <a class="btn btn-primary btn-sm" href="show/show.php?id=<?php echo $room['id']; ?>">
                       Visualizza
                     </a>
-                    <a class="btn btn-warning" href="">
+                    <a class="btn btn-primary btn-sm" href="">
                       Modifica
                     </a>
-                    <a class="btn btn-danger" href="">
+                    <a class="btn btn-danger btn-sm" href="">
                       Cancella
                     </a>
                   </td>
