@@ -15,33 +15,33 @@ include "server_show.php";
 
 <body>
   <div class="container">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+      </ol>
+    </nav>
+
     <div class="row">
-      <div class="col-sm-12 text-right">
-        <a class="btn btn-success" href="../index.php">Torna alla home</a>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Dettagli della stanza</h3>
-            </div>
-            <div class="panel-body">
-              <ul>
-                <li>Id stanza: <?php echo $room['id']; ?></li>
-                <li>Numero stanza: <?php echo $room['room_number']; ?></li>
-                <li>Piano: <?php echo $room['floor']; ?></li>
-                <li>Numero letti: <?php echo $room['beds']; ?></li>
-              </ul>
-            </div>
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Dettagli della stanza</h5>
           </div>
-
-
+          <div class="card-body">
+            <ul>
+              <li>Id stanza: <?php echo $room['id']; ?></li>
+              <li>Numero stanza: <?php echo $room['room_number']; ?></li>
+              <li>Piano: <?php echo $room['floor']; ?></li>
+              <li>Numero letti: <?php echo $room['beds']; ?></li>
+            </ul>
+          </div>
         </div>
+
+
       </div>
     </div>
+
 
 </body>
 
