@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="public/css/style.css">
+
   <title>Hotel</title>
 </head>
 
@@ -16,8 +17,8 @@
   <main>
     <div class="container-xl">
       <div class="row">
-        <div class="col-6">
-          <h1>Stanze hotel</h1>
+        <div class="col-12">
+          <h2>Stanze hotel</h2>
         </div>
 
       </div>
@@ -44,15 +45,18 @@
                   <td><?php echo $room['room_number']; ?></td>
                   <td><?php echo $room['floor']; ?></td>
                   <td class="text-right">
-                    <a class="btn btn-primary btn-sm" href="show/show.php?id=<?php echo $room['id']; ?>">
-                      Visualizza
-                    </a>
-                    <a class="btn btn-primary btn-sm" href="">
-                      Modifica
-                    </a>
-                    <a class="btn btn-danger btn-sm" href="">
-                      Cancella
-                    </a>
+
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Azioni
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="show/show.php?id=<?php echo $room['id']; ?>">Info</a>
+                        <a class="dropdown-item" href="#">Modifica</a>
+                        <a class="dropdown-item" href="#">Elimina</a>
+                      </div>
+                    </div>
+
                   </td>
                 </tr>
                 <?php
@@ -68,7 +72,7 @@
     </div>
   </main>
 
-
+  <script src="public/js/script.js" charset="utf-8"></script>
 </body>
 
 </html>
