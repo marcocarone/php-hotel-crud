@@ -17,7 +17,7 @@
   $sql = "DELETE FROM `stanze` WHERE `id` =  '$roomId'";
   $result = $conn->query($sql);
   if($result ) {
-    echo "stanza cancellata";
+    header("Location: $base_path?room_id=$roomId");
   } else {
       echo 'non è andata a buon fine la query';
   }

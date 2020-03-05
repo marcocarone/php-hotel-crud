@@ -1,4 +1,7 @@
 <?php include "server.php"; ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +20,11 @@
 
   <main>
     <div class="container margin-top">
+      <?php if(!empty($_GET['room_id'])) { ?>
+          <div class="alert alert-danger">
+            Hai cancellato la stanza id : <?php echo $_GET['room_id'] ?>
+          </div>
+       <?php } ?>
       <div class="row">
         <div class="col-12">
           <h2>Stanze hotel</h2>
