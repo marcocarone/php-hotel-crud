@@ -1,4 +1,4 @@
-<?php include "database.php" ?>
+<?php include "server.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,28 +13,10 @@
 
 <body>
 
-  <header>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container-xl">
-      <a class="navbar-brand" href="#">Hotel</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Stanze<span class="sr-only">(current)</span></a>
-          </li>
-
-        </ul>
-      </div>
-      </div>
-    </nav>
-  </header>
+<?php include __DIR__ . "/partials/header.php"; ?>
 
   <main>
-    <div class="container-xl margin-top">
+    <div class="container margin-top">
       <div class="row">
         <div class="col-12">
           <h2>Stanze hotel</h2>
@@ -72,8 +54,12 @@
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="show/show.php?id=<?php echo $room['id']; ?>">Info</a>
                         <a class="dropdown-item" href="#">Modifica</a>
-                        <a class="dropdown-item" href="#">Elimina</a>
+                        <form action="delete/server_delete.php" method="post">
+                        <input type="hidden" name="id" value="<?php echo $room['id'] ?>">
+                        <input class="dropdown-item" type="submit" value="Elimina">
+                        </form>
                       </div>
+
                     </div>
 
                   </td>

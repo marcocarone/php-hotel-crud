@@ -12,15 +12,11 @@ include "server_show.php";
   <link rel="stylesheet" href="../public/css/style.css">
   <title>Show</title>
 </head>
-
+<?php include __DIR__ . "/../partials/header.php"; ?>
 <body>
-  <div class="container">
+  <div class="container margin-top">
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
-      </ol>
-    </nav>
+
 
     <div class="row">
       <div class="col-12">

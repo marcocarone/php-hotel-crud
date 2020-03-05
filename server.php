@@ -1,18 +1,17 @@
 <?php
-include __DIR__ . '/../database.php';
+include "database.php";
 
-$id_room = $_GET["id"];
-$sql = "SELECT * FROM `stanze` WHERE `id` = $id_room ";
+$sql = "SELECT * FROM `stanze`";
 $result = $conn->query($sql);
-
 if ($result && $result->num_rows > 0) {
-    $room = $result->fetch_assoc();
-    // var_dump($room);
+    $rooms = [];
+    while ($row = $result->fetch_assoc()) {
+        $rooms[] = $row;
+    }
 } elseif ($result) {
     echo "Nessun risultato";
 } else {
     echo "Errore query";
 }
 $conn->close();
-
  ?>
