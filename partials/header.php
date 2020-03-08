@@ -13,7 +13,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="<?php echo $base_path ?>">Stanze<span class="sr-only">(current)</span></a>
         </li>
-        
+
 
       </ul>
     </div>
@@ -21,7 +21,7 @@
       <ul class="navbar-nav">
 
         <li>
-          <a class="btn btn-primary" href="insert/insert.php">Inserisci</a>
+          <a class="btn btn-primary" href="<?php echo $base_path . "/insert/insert.php" ?>">Inserisci</a>
         </li>
 
       </ul>
