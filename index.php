@@ -61,7 +61,7 @@
                       </a>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="show/show.php?id=<?php echo $room['id']; ?>">Info</a>
-                        <a class="dropdown-item" href="#">Modifica</a>
+                        <a class="dropdown-item" href="update/update.php?id=<?php echo $room['id']; ?>">Modifica</a>
                         <form action="delete/server_delete.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $room['id'] ?>">
                         <input class="dropdown-item" type="submit" value="Elimina">
