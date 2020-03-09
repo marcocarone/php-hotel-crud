@@ -41,8 +41,8 @@
               </thead>
               <tbody>
                 <?php
-                if (!empty($prenotazioni)) {
-                  foreach ($prenotazioni as $prenotazione) {
+                if (!empty($results)) {
+                  foreach ($results as $prenotazione) {
                   ?>
                 <tr>
                   <td><?php echo $prenotazione['id']; ?></td>
