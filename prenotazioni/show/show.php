@@ -27,7 +27,11 @@ include "server_show.php";
           <div class="card-body">
             <ul>
               <li>Id prenotazione: <?php echo $prenotazione['id']; ?></li>
-              <li>Numero stanza: <?php echo $prenotazione['room_number']; ?></li>
+              <li>Numero stanza: <?php
+              if ($prenotazione['room_number'] == NULL) {
+                echo "Non presente";
+              }
+              echo $prenotazione['room_number']; ?></li>
               <li>Nome e Cognome Ospite: <?php echo $prenotazione['name'] . " ". $prenotazione['lastname'] ; ?></li>
             </ul>
           </div>
