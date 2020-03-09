@@ -19,7 +19,7 @@
 
 
   $sql = "INSERT INTO `stanze` (room_number, floor, beds, created_at, updated_at)
-  VALUES ($roomNumber, $floor, $beds, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);";
+  VALUES ($roomNumber, $floor, $beds, NOW(), NOW());";
 
   $result = $conn->query($sql);
 
